@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_marginBottom="@dimen/vertical_margin"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:text="@string/profile" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_prof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:background="@drawable/prof_bg"
+        tools:listitem="@layout/item_profile" />
+
+</LinearLayout>
