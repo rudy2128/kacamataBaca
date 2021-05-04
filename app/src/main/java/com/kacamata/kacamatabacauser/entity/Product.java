@@ -1,5 +1,7 @@
 package com.kacamata.kacamatabacauser.entity;
 
+import androidx.room.Ignore;
+
 import com.google.firebase.database.IgnoreExtraProperties;
 
 @IgnoreExtraProperties
@@ -17,7 +19,7 @@ public class Product {
         this.price = price;
         this.description = description;
     }
-
+    @Ignore
     public Product() {
     }
 
